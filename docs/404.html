@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duolingo app</title>
+    <script>
+        // Store the URL the user was trying to access when receiving the 404.
+        sessionStorage.redirect = location.href;
+    </script>
+
+    <!-- Immediately redirect to the base URL so we can use the SPA routing. -->
+    <!-- <meta http-equiv="refresh" content="0;URL='/'"></meta> -->
+</head>
+<body>
+    <div class='center-404'>
+        <h1>Hey, cette page n'existe pas !</h1>
+        <img class="img-404" src="https://3.bp.blogspot.com/-fPywDuq4TyM/XFH7hAAS6UI/AAAAAAAAK7M/KBk0M5q7rzQ3-9cKE563Mrc9wDjhMumOQCLcBGAs/s1600/duolingo_2.1544716157.gif"/>
+        <a href="/" class="btn-404-accueil">
+          Retourner à l'accueil
+        </a>
+    </div>
+</body>
+</html>
